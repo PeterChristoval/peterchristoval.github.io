@@ -1,32 +1,48 @@
+/* FFAE4F */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    font-family: 'Open Sans', sans-serif;
-    color: #152C5B;
+    /* background-color: #282C3B; */
+    font-family: 'Montserrat', sans-serif !important;
+    /* color: #152C5B; */
+    color: white;
+}
+
+.divider {
+    height: 3px;
+    border-radius: 100px;
+    width: 50px;
+    background-color: #FFC25C;
+}
+
+.verticalDivider {
+    width: 3px;
+    height: 150px;
+    border-radius: 10000px;
+    background-color: #FFC25C;
 }
 
 /* Navbar */
 .navbar {
-    background-color: white;
+    background-color: #282C3B;
 }
 
 .navbar-brand {
     font-weight: 600;
     font-size: 24px;
-    color: #152C5B !important;
+    color: white !important;
 }
 
 .nav-link {
-    color: #152C5B !important;
+    color: white !important;
     text-decoration: none;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #FFAE4F !important;
+    color: #FFC25C !important;
 }
 
 .nav-link::before {
@@ -37,7 +53,7 @@ body {
     left: 50%;
     bottom: 0;
     height: 2px;
-    background-color: #FFAE4F;
+    background-color: #FFC25C;
 }
 
 .nav-link:hover::before {
@@ -48,42 +64,61 @@ body {
 
 /* Jumbotron */
 .jumbo {
-    margin-top: 80px;
+    background-color: #282C3B;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-bottom: 50px;
 }
 
 .jumbo h1 {
+    color: white;
     font-size: 29px;
     font-weight: 700;
 }
 
+.jumbo h3 {
+    color: white;
+    font-size: 29px;
+    font-weight: 600;
+}
+
 .jumbo .peter {
-    color: #FFAE4F;
+    color: #FFC25C;
 }
 
 .jumbo p {
     margin-top: 10px;
     font-size: 14px;
+    color: white;
 }
 
-.jumbo .paragraph {
+/* .jumbo .paragraph {
     margin-top: -16px;
-}
+} */
 
 .hire-me {
-    margin-top: 8px;
-    border: none;
-    background: linear-gradient(180deg, rgba(255, 173, 77, 0.8) 0%, #FFAE4F 100%);
-    border-radius: 20px;
+    /* margin-top: 8px; */
+    border: 1px solid #FFC25C;
+    /* background: linear-gradient(180deg, rgba(255, 173, 77, 0.8) 0%, #FFC25C 100%); */
+    /* border-radius: 20px; */
     font-size: 10px;
     padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
-    color: white;
+    color: #FFC25C;
+    letter-spacing: 5px;
 }
 
 .hire-me:hover {
     color: white;
-    background: linear-gradient(180deg, rgba(255, 138, 0, 0.5) 0%, #FF8A00 100%);
+    background: #e2ad51;
 }
 
 .jumbo .col-6 img{
@@ -91,120 +126,42 @@ body {
 }
 /* Akhir Jumbotron */
 
-/* Project */
-.project {
-    margin-top: 80px;
-}
-
-.project .image {
-    margin-top: 10px;
-}
-
-.project h5 {
-    font-weight: 600;
-}
-
-.project h3 {
-    display: none;
-}
-
-.project h5 span {
-    color: #FFAE4F;
-}
-
-.project .col-12 img {
-    width: 100%;
-}
-
-.project .staycation {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.project .description {
-    display: none;
-}
-/* Akhir Project */
-
 /* About */
 .about {
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    margin-top: 80px;
-    background-color: #FFAE4F;
-}
-
-.about h3 {
-    display: none
-}
-
-.about h5 {
-    font-weight: 600;
-}
-
-.about p {
-    padding-bottom: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 14px;
-}
-
-.about .about-me {
-    margin-top: -2px;
+    background-color: #3A3E50;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /* Akhir About */
 
-/* Tools */
-.tools {
-    margin-top: 80px;
+/* Services */
+.services {
+    background-color: #282C3B;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.tools .desktop {
-    display: none;
+.service-card {
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px; */
+    padding: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: #2B2C32;
 }
 
-.tools h3 {
-    display: none;
+.service-card:hover {
+    transform: translateY(-15px);
 }
-
-.tools h5 {
-    margin-bottom: 50px;
-    font-weight: 600;
-}
-
-.tools span {
-    color: #FFAE4F;
-}
-
-.tablet img {
-    display: none;
-}
-
-.mobile img {
-    width: 20%;
-}
-/* Akhir Tools */
-
-footer {
-    margin-top: 70px;
-    border-top: 1px solid #ececec;
-    padding-top: 17px;
-    padding-bottom: 14px;
-    font-weight: lighter;
-    color: #707070;
-}
-
-footer h6 {
-    font-size: 10px;
-}
-
+/* Akhir Services */
 
 @media (min-width: 768px) {
     /* Navbar */
-    .navbar {
+    /* .navbar {
         border-bottom: 1px solid #ececec;
-    }
+    } */
     /* Akhir Navbar */
 
     /* Jumbotron */
@@ -222,111 +179,14 @@ footer h6 {
     }
     /* Akhir Jumbotron */
 
-    /* Project */
-    .project .description {
-        display: block;
-    }
-
-    .description h2 {
-        font-size: 30px;
-        color: #FFAE4F;
-        font-weight: 700;
-    }
-
-    .description h4 {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .description p {
-        margin-top: 10px;
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    .description button {
-        font-size: 10px;
-        font-weight: 600;
-        margin-top: 10px;
-        border-color: #FFAE4F;
-        border-radius: 20px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 16px;
-        padding-right: 16px;
-        transition: ease-out 0.2s;
-    }
-
-    .description button:hover {
-        transform: translateY(-2px);
-        font-size: 10px;
-        background-color: #FFAE4F;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .description-1 p {
-        margin-left: 50px;
-    }
-
-    .description-1 h2 {
-        margin-left: 50px;
-    }
-
-    .description-1 h4 {
-        margin-left: 50px;
-    }
-
-    .description-1 button {
-        margin-left: 50px;
-    }
-
-    .description-2 {
-        margin-top: 50px;
-    }
-
-    .description-3 p {
-        margin-left: 50px;
-    }
-
-    .description-3 h2 {
-        margin-left: 50px;
-    }
-
-    .description-3 h4 {
-        margin-left: 50px;
-    }
-
-    .description-3 button {
-        margin-left: 50px;
-    }
-    /* Akhir Project */
-
-    /* About */
-    .about .about-me {
-        margin-top: 0px;
-    }
-    /* Akhir About */
-
-    /* Tools */
-    .mobile img {
-        display: none;
-    }
-
-    .tablet img {
-        margin-top: 30px;
-        display: inline-block;
-        width: 8%;
-    }
-    /* AKhir Tools */
 }
 
 
 @media (min-width: 992px) {
     /* Navbar */
-    .navbar {
+    /* .navbar {
         border-bottom: 1px solid #ececec;
-    }
+    } */
 
     .navbar-brand {
         font-size: 36px;
@@ -356,200 +216,15 @@ footer h6 {
 
     .hire-me {
         margin-top: 16px;
-        border: none;
-        background: linear-gradient(180deg, rgba(255, 173, 77, 0.5) 0%, #FFAE4F 100%);
-        border-radius: 20px;
+        /* border-radius: 20px; */
         font-size: 16px;
         padding: 9px;
         padding-left: 30px;
         padding-right: 30px;
-        color: white;
     }
 
     .jumbo .col-6 img {
         display: block;
     }
     /* Akhir Jumbotron */
-
-    /* Project */
-    .project {
-        margin-top: 150px;
-    }
-
-    .project .image {
-        margin-top: 50px;
-    }
-
-    .description h2 {
-        font-size: 40px;
-        color: #FFAE4F;
-        font-weight: 700;
-    }
-
-    .description h4 {
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .description p {
-        margin-top: 30px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .description button {
-        color: #152C5B;
-        font-size: 14px;
-        font-weight: 600;
-        margin-top: 30px;
-        border-color: #FFAE4F;
-        border-radius: 20px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left: 36px;
-        padding-right: 36px;
-        transition: ease-out 0.2s;
-    }
-
-    .description button:hover {
-        color: #152C5B;
-        border-color: greenyellow;
-        background-color: white;
-        border-radius: 5px;
-        transform: translateY(0px);
-        font-size: 14px;
-    }
-
-    .description-1 p{
-        margin-left: 150px;
-    }
-
-    .description-1 h2{
-        margin-left: 150px;
-    }
-
-    .description-1 h4{
-        margin-left: 150px;
-    }
-
-    .description-1 button{
-        margin-left: 150px;
-    }
-
-    .project h5 {
-        display: none;
-    }
-
-    .project h3 {
-        display: block;
-        font-weight: 600;
-    }
-
-    .project h3 span {
-        color: #FFAE4F;
-    }
-
-    .project .description {
-        display: block;
-    }
-
-    .description-2 {
-        margin-top: 179px;
-    }
-
-    .description-2 p {
-        margin-right: 100px;
-    }
-
-    .project .staycation {
-        margin-top: 150px;
-    }
-
-    .description-3 {
-        margin-top: 179px;
-    }
-
-    .project .nomads {
-        margin-top: 150px;
-    }
-    .description-3 p {
-        margin-left: 150px;
-    }
-
-    .description-3 h2 {
-        margin-left: 150px;
-    }
-
-    .description-3 h4 {
-        margin-left: 150px;
-    }
-
-    .description-3 button {
-        margin-left: 150px;
-    }
-
-    .modal-body img {
-        border: 1px solid #ececec;
-        border-radius: 10px;
-    }
-    /* Akhir Project */
-
-    /* About */
-    .about {
-        margin-top: 150px;
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-    .about h5 {
-        display: none;
-    }
-
-    .about h3 {
-        display: block;
-        font-weight: 600;
-    }
-
-    .about p {
-        margin-top: 30px;
-        font-size: 16px;
-    }
-    /* Akhir About */
-
-    /* Tools */
-    .tools {
-        margin-top: 150px;
-    }
-
-    .tools .tablet {
-        margin-top: 50px;
-        display: none;
-    }
-
-    .tools .mobile {
-        display: none;
-    }
-
-    .tools .desktop {
-        margin-top: 50px;
-        display: block;
-    }
-
-    .tools h3 {
-        display: block;
-        font-weight: 600;
-    }
-
-    .tools h5 {
-        display: none;
-    }
-    /* Akhir Tools */
-
-    footer {
-        padding-top: 35px;
-        padding-bottom: 29px;
-    }
-
-    footer h6 {
-        font-size: 14px;
-    }
 }
