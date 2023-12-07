@@ -10,6 +10,10 @@ body {
     color: white;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
 .divider {
     height: 3px;
     border-radius: 100px;
@@ -118,7 +122,23 @@ body {
 
 .hire-me:hover {
     color: white;
-    background: #e2ad51;
+    background-color: #e2ad51;
+}
+
+.contactBtn {
+    padding: 10px 30px;
+    border: 1px solid #FFC25C;
+    border-radius: 10px;
+    color: #e2ad51;
+    letter-spacing: 5px;
+    text-decoration: none;
+    transition: 100ms;
+}
+
+.contactBtn:hover {
+    background-color: #e2ad51;
+    color: white;
+    text-decoration: none;
 }
 
 .jumbo .col-6 img{
@@ -147,26 +167,53 @@ body {
     padding-left: 50px;
     padding-right: 50px; */
     padding: 50px;
-    transition: transform 0.3s ease;
     cursor: pointer;
     background-color: #2B2C32;
 }
 
 .service-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-40px) !important;
+    transition: transform 0.3s ease !important;
 }
 /* Akhir Services */
+
+/* Skills */
+.skills {
+    background-color: #3A3E50;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skill-card {
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px; */
+    padding: 50px;
+    cursor: pointer;
+    background-color: #2B2C32;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) !important;
+    transition: transform 0.3s ease !important;
+}
+/* Akhir Skills */
 
 /* Projects */
 .projects {
     background-color: #3A3E50;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-left: -35px;
     /* padding-left: 450px;
     padding-right: 450px; */
 }
 
-/* Projects */
+.projectImg {
+    width: 150%;
+}
+
 .projects h2 {
     margin-left: 100px;
 }
@@ -177,13 +224,23 @@ body {
 }
 
 .projectCard {
-    border-top: 1px solid #FFC25C;
     padding-top: 20px;
     padding-right: 50px;
 }
 /* Akhir Projects */
 
+/* Contacts */
+.contacts {
+    background-color: #2B2C32;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* Akhir Contacts */
+
 @media (min-width: 768px) {
+    .container-fluid {
+        width: 90%;
+    }
     /* Navbar */
     /* .navbar {
         border-bottom: 1px solid #ececec;
@@ -208,6 +265,10 @@ body {
     /* Projects */
     .projects h2 {
         margin-left: 100px;
+    }
+
+    .projectImg {
+        width: 100%;
     }
 
     .projectContainer {
@@ -266,21 +327,34 @@ body {
     /* Akhir Jumbotron */
 
     /* Projects */
+    .projects {
+        padding: 100 50px;
+    }
+
     .projects h2 {
         margin-left: 100px;
     }
 
-    .projectContainer {
-        padding: 0 100px;
-        margin-top: -100px;
+    .projectImg {
+        width: 100%;
     }
-    .projectCard2 {
-        margin-top: 200px;
-        /* margin-right: 50px;
-        margin-left: 50px; */
+
+    .projectCard {
+        border-top: 1px solid #FFC25C;
     }
+
+    .projectCard2, .projectCard1 {
+        margin-top: -150px;
+    }
+
     .projectCard3 {
-        margin-top: 370px;
+        margin-top: -70px;
     }
     /* Akhir Projects */
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        width: 70%;
+    }
 }

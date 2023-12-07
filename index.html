@@ -23,7 +23,7 @@
 
         <!-- Navbar -->
         <nav data-aos="fade-up" data-aos-duration="1000" class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">Peter C.</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,6 +34,7 @@
                         <a class="nav-item nav-link" href="#about">About Me</a>
                         <a class="nav-item nav-link" href="#services">Services</a>
                         <a class="nav-item nav-link" href="#projects">Projects</a>
+                        <a class="nav-item nav-link" href="#skills">Tools & Skills</a>
                         <!-- <a class="nav-item nav-link" href="#Contact">Contact</a> -->
                     </div>
                 </div>
@@ -71,7 +72,7 @@
         <!-- About Me -->
         <div class="" id="about" style="margin-top: -100px; position: absolute;"></div>
         <section class="about">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- <h3 class="text-center" style="text-transform: uppercase;">About Me</h3> -->
                 <!-- <div class="text-center mx-auto divider" style="margin-top: 10px; margin-bottom: 40px;"></div> -->
                 <div class="row justify-content-center align-items-center">
@@ -93,7 +94,7 @@
         <!-- Services -->
         <div class="" id="services" style="margin-top: -100px; position: absolute;"></div>
         <section class="services">
-            <div class="container">
+            <div class="container-fluid">
                 <h3 data-aos-duration="1000" data-aos="fade-in" class="text-center" style="text-transform: uppercase; letter-spacing: 5px;">Services</h3>
                 <div class="text-center mx-auto divider" style="margin-top: 10px; margin-bottom: 40px;"></div>
                 <div class="row justify-content-center">
@@ -120,10 +121,10 @@
         <!-- Projects -->
         <div class="" id="projects" style="margin-top: -100px; position: absolute;"></div>
         <section class="projects">
-            <div class="container">
+            <div class="container-fluid">
                 <h2 data-aos-duration="1000" data-aos="fade-right" style="text-transform: uppercase; letter-spacing: 5px;">My Latest</h2>
                 <h2 data-aos-duration="1000" data-aos="fade-right" style="text-transform: uppercase; letter-spacing: 5px; color: #FFC25C;">Projects</h2>
-                <div class="projectContainer row d-flex justify-content-center">
+                <!-- <div class="projectContainer row d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-4 mr-md-4 mr-lg-0">
                         <div data-aos-duration="1000" data-aos="fade-up" class="projectCard projectCard3">
                             <div class="d-flex titleProjectCard align-items-center">
@@ -133,7 +134,7 @@
                                 </div>
                                 <button class="btn btn-info ml-3 ml-md-0 ml-lg-3" data-toggle="modal" data-target="#staycationModal" style="border-radius: 1000px;"><i class="fa-solid fa-location-arrow mt-2"></i></button>
                             </div>
-                            <img src="img/StaycationCollection.png" class="mt-3" style="width: 150%" alt="">
+                            <img src="img/StaycationCollection.png" class="mt-3 projectImg" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 my-5 my-md-0 ml-md-4 ml-lg-0">
@@ -145,7 +146,7 @@
                                 </div>
                                 <button class="btn btn-info ml-3 ml-md-0 ml-lg-3" data-toggle="modal" data-target="#nomadsModal" style="border-radius: 1000px;"><i class="fa-solid fa-location-arrow mt-2"></i></button>
                             </div>
-                            <img src="img/NomadsCollection.png" class="mt-3" style="width: 150%" alt="">
+                            <img src="img/NomadsCollection.png" class="mt-3 projectImg" alt="">
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 mt-md-5 mt-lg-0">
@@ -157,7 +158,52 @@
                                 </div>
                                 <button class="btn btn-info ml-3 ml-md-0 ml-lg-3" data-toggle="modal" data-target="#hefaModal" style="border-radius: 1000px;"><i class="fa-solid fa-location-arrow mt-2"></i></button>
                             </div>
-                            <img src="img/HefaStoreCollection.png" class="mt-3" style="width: 150%" alt="">
+                            <img src="img/HefaStoreCollection.png" class="mt-3 projectImg" alt="">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="projectContainer">
+                    <div class="row d-flex justify-content-center mx-auto justify-content-lg-end projectCard3">
+                        <div class="col-12 col-lg-4">
+                            <div data-aos-duration="1000" data-aos="fade-up" class="projectCard">
+                                <div class="d-flex titleProjectCard align-items-center">
+                                    <div class="">
+                                        <h5 style="text-transform: uppercase; font-weight: 600; letter-spacing: 5px;">Staycation</h5>
+                                        <p class="p-0 m-0" style="letter-spacing: 3px;">Hotel & Apartment</p>
+                                    </div>
+                                    <button class="btn btn-info ml-3 ml-md-0 ml-lg-3" data-toggle="modal" data-target="#staycationModal" style="border-radius: 1000px;"><i class="fa-solid fa-location-arrow mt-2"></i></button>
+                                </div>
+                                <img src="img/StaycationCollection.png" class="mt-3 projectImg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-auto justify-content-lg-center">
+                        <div class="col-12 col-lg-4 my-5 my-lg-0">
+                            <div data-aos-duration="1000" data-aos="fade-up" class="projectCard projectCard2">
+                                <div class="d-flex titleProjectCard align-items-center">
+                                    <div class="">
+                                        <h5 style="text-transform: uppercase; font-weight: 600; letter-spacing: 5px;">Staycation</h5>
+                                        <p class="p-0 m-0" style="letter-spacing: 3px;">Hotel & Apartment</p>
+                                    </div>
+                                    <button class="btn btn-info ml-3 ml-md-0 ml-lg-3" data-toggle="modal" data-target="#staycationModal" style="border-radius: 1000px;"><i class="fa-solid fa-location-arrow mt-2"></i></button>
+                                </div>
+                                <img src="img/StaycationCollection.png" class="mt-3 projectImg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mx-auto justify-content-lg-start">
+                        <div class="col-12 col-lg-4">
+                            <div data-aos-duration="1000" data-aos="fade-up" class="projectCard projectCard1">
+                                <div class="d-flex titleProjectCard align-items-center">
+                                    <div class="">
+                                        <h5 style="text-transform: uppercase; font-weight: 600; letter-spacing: 5px;">Staycation</h5>
+                                        <p class="p-0 m-0" style="letter-spacing: 3px;">Hotel & Apartment</p>
+                                    </div>
+                                    <button class="btn btn-info ml-3 ml-md-0 ml-lg-3" data-toggle="modal" data-target="#staycationModal" style="border-radius: 1000px;"><i class="fa-solid fa-location-arrow mt-2"></i></button>
+                                </div>
+                                <img src="img/StaycationCollection.png" class="mt-3 projectImg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,7 +211,124 @@
         </section>
         <!-- Akhir Projects -->
 
+        <!-- Skills -->
+        <div class="" id="skills" style="margin-top: -100px; position: absolute;"></div>
+        <section class="skills">
+            <div class="container-fluid">
+                <h3 data-aos-duration="1000" data-aos="fade-in" class="text-center" style="text-transform: uppercase; letter-spacing: 5px;">tools & skills</h3>
+                <div class="text-center mx-auto divider" style="margin-top: 10px; margin-bottom: 40px;"></div>
+                <div class="row justify-content-center">
+                    <div data-aos-duration="1000" data-aos="fade-down" class="col-8 col-md-5 col-lg-4 mr-md-2 skill-card">
+                        <i class="fa-solid fa-pen-nib fa-xl" style="color: #FFC25C;"></i>
+                        <h4 class="my-4" style="font-weight: 600;">UX / UI Design</h4>
+                        <h6 style="font-weight: 500; text-decoration: underline;">Tools</h6>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe XD</li>
+                        </ul>
+                        <h6 style="font-weight: 500; text-decoration: underline;">Skills</h6>
+                        <ul>
+                            <li>User Research</li>
+                            <li>Journey Mapping</li>
+                            <li>Prototyping</li>
+                            <li>Layout & Composition</li>
+                            <li>Typography</li>
+                            <li>Animation & Transition</li>
+                            <li>Responsive Design</li>
+                            <li>Create Icon</li>
+                        </ul>
+                    </div>
+                    <div data-aos-duration="1000" data-aos="fade-down" class="my-3 my-md-0 col-8 col-md-5 col-lg-4 ml-md-2 skill-card">
+                        <i class="fa-solid fa-code fa-xl" style="color: #FFC25C;"></i>
+                        <h4 class="my-4" style="font-weight: 600;">Front End & Mobile</h4>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Chrome</li>
+                            <li>Postman</li>
+                            <li>Github</li>
+                        </ul>
+                        <h6 style="font-weight: 500; text-decoration: underline;">Skills</h6>
+                        <ul>
+                            <li>HTML / CSS</li>
+                            <li>Javascript</li>
+                            <li>React JS</li>
+                            <li>React Native</li>
+                            <li>Vue JS</li>
+                            <li>Git Version Control</li>
+                            <li>Fetching Rest API</li>
+                        </ul>
+                    </div>
+                    <div data-aos-duration="1500" data-aos="fade-down" class="mt-0 mt-md-3 col-8 col-md-5 col-lg-4 skill-card mr-md-2">
+                        <i class="fa-solid fa-server fa-xl" style="color: #FFC25C;"></i>
+                        <h4 class="my-4" style="font-weight: 600;">Back End</h4>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Chrome</li>
+                            <li>Postman</li>
+                            <li>Github</li>
+                            <li>MAMPP</li>
+                            <li>Terminal</li>
+                            <li>VPS Linux</li>
+                        </ul>
+                        <h6 style="font-weight: 500; text-decoration: underline;">Skills</h6>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Javascript</li>
+                            <li>Node JS</li>
+                            <li>Express JS</li>
+                            <li>Laravel</li>
+                            <li>Git Version Control</li>
+                            <li>API Deployment</li>
+                        </ul>
+                    </div>
+                    <div data-aos-duration="1500" data-aos="fade-down" class="mt-0 mt-md-3 col-8 col-md-5 col-lg-4 ml-md-2 skill-card">
+                        <i class="fa-solid fa-database fa-xl" style="color: #FFC25C;"></i>
+                        <h4 class="my-4" style="font-weight: 600;">Database Administrator</h4>
+                        <ul>
+                            <li>Chrome</li>
+                            <li>MongoDB</li>
+                            <li>MongoDB Compass</li>
+                            <li>Phpmyadmin</li>
+                            <li>Adminer</li>
+                            <li>TablePlus</li>
+                            <li>MAMPP</li>
+                            <li>Terminal</li>
+                        </ul>
+                        <h6 style="font-weight: 500; text-decoration: underline;">Skills</h6>
+                        <ul>
+                            <li>Mysql</li>
+                            <li>Nosql</li>
+                            <li>Installation Database</li>
+                            <li>Configuration Database</li>
+                            <li>Database Design</li>
+                            <li>Database Maintenance</li>
+                            <li>Recovery and Backup Data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Skills -->
 
+        <!-- Contacts -->
+        <div class="" id="contacts" style="margin-top: -100px; position: absolute;"></div>
+        <section class="contacts">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-around align-items-center">
+                    <div class="col-12 col-md-4">
+                        <h1 data-aos-duration="1000" data-aos="fade-right" style="text-transform: uppercase; letter-spacing: 5px;">Let's <i class="fa-solid fa-arrow-right"></i></h1>
+                        <h1 data-aos-duration="1000" data-aos="fade-right" style="text-transform: uppercase; letter-spacing: 5px; color: #FFC25C;">Connect</h2>
+                        <p data-aos-duration="1000" data-aos="fade-right" class="mt-4" style="line-height: 30px;">Thank you for taking the time to explore my portfolio! If you have any questions, project inquiries, or if you just want to connect, I'd love to hear from you. Your feedback and ideas are always welcome. Feel free to use the contact form below or explore other ways to get in touch.</p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <a data-aos-duration="1000" data-aos="fade-left" href="mailto:peterchristoval@gmail.com" class="contactBtn"><i class="fa-solid fa-envelope mr-2"></i> <span>peterchristoval@gmail.com</span></a>
+                        <a data-aos-duration="1500" data-aos="fade-left" href="https://www.instagram.com/direct/t/peterchristoval" class="contactBtn my-4"><i class="fa-brands fa-instagram mr-2"></i> <span>Peter Christoval</span></a>
+                        <a data-aos-duration="2000" data-aos="fade-left" href="https://t.me/PeterChristoval" class="contactBtn"><i class="fa-brands fa-telegram mr-2"></i> <span>PeterChristoval</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Akhir Contacts -->
 
 
 
