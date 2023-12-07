@@ -8,6 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif !important;
     /* color: #152C5B; */
     color: white;
+    overflow-x: hidden;
 }
 
 li {
@@ -133,6 +134,8 @@ li {
     letter-spacing: 5px;
     text-decoration: none;
     transition: 100ms;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .contactBtn:hover {
@@ -211,7 +214,7 @@ li {
 }
 
 .projectImg {
-    width: 150%;
+    width: 100%;
 }
 
 .projects h2 {
