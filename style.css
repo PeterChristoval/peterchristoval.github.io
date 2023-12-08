@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+.container-fluid {
+    overflow-x: hidden;
+}
+
 li {
     margin-bottom: 10px;
 }
@@ -208,27 +212,14 @@ li {
     background-color: #3A3E50;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: -35px;
+    /* margin-left: -35px; */
     /* padding-left: 450px;
     padding-right: 450px; */
 }
 
 .projectImg {
+    display: block;
     width: 100%;
-}
-
-.projects h2 {
-    margin-left: 100px;
-}
-
-.projectContainer {
-    padding: 0 100px;
-    margin-top: 50px;
-}
-
-.projectCard {
-    padding-top: 20px;
-    padding-right: 50px;
 }
 /* Akhir Projects */
 
@@ -266,17 +257,13 @@ li {
     /* Akhir Jumbotron */
 
     /* Projects */
-    .projects h2 {
-        margin-left: 100px;
-    }
 
-    .projectImg {
-        width: 100%;
-    }
-
-    .projectContainer {
-        padding: 0 100px;
-        margin-top: 50px;
+    .btnHammerTablet {
+        background-color: #FFC25C;
+        border-radius: 10px;
+        padding: 10px 30px;
+        border: 0;
+        color: white;
     }
     /* Akhir Projects */
 
@@ -332,26 +319,6 @@ li {
     /* Projects */
     .projects {
         padding: 100 50px;
-    }
-
-    .projects h2 {
-        margin-left: 100px;
-    }
-
-    .projectImg {
-        width: 100%;
-    }
-
-    .projectCard {
-        border-top: 1px solid #FFC25C;
-    }
-
-    .projectCard2, .projectCard1 {
-        margin-top: -150px;
-    }
-
-    .projectCard3 {
-        margin-top: -70px;
     }
     /* Akhir Projects */
 }
